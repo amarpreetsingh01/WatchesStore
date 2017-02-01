@@ -39,13 +39,15 @@
         <td><form:errors path="price" cssClass="error" /></td>
     </tr>
     <tr>
-        <td><form:label path="description">Decription</form:label></td>
+        <td><form:label path="description">Description</form:label></td>
         <td><form:input path="description" /></td>
         <td><form:errors path="description" cssClass="error" /></td>
     </tr>
        <tr>
         <td><form:label path="">Image</form:label></td>
-        <td><form:input type="file"  path="image" /></td>
+        <td><form:input type="file"  path="image" /> <img src="C:\Users\acer\Desktop\watchespics/watchesImages.jpg" alt="watch"></td>
+        
+        
     </tr>
     <tr>
         <td colspan="2">

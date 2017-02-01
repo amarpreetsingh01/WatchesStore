@@ -14,7 +14,11 @@
 </head>
 <body>
 <style>
-form {
+form
+ {
+    background-image: <img src="C:\Users\acer\resources\images/watches12.jpg" alt="watch">;
+}
+{
     border: 3px solid #f1f1f1;
 }
 
@@ -49,8 +53,8 @@ button {
 }
 
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    width: 20%;
+    border-radius: 20%;
 }
 
 .container {
@@ -77,17 +81,17 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form name="login" action="perform_login" method="post">
+<form name="loginPage" action="perform_login" method="post">
   <div class="imgcontainer">
     <img src="resources/images/login.jpg" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="username" required>
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="password" required>
         
     <button type="submit">Login</button>
     <input type="checkbox" checked="checked"> Remember me

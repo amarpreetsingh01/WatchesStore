@@ -28,7 +28,7 @@
 		<intercept-url pattern="/admin/**" access="hasRole('ADMIN')" />
 		<intercept-url pattern="/user/**" access="hasRole('USER')" />
 
-		<form-login login-page='/login' default-target-url="/"
+		<form-login login-page='/loginPage' default-target-url="/"
 			login-processing-url="/perform_login" authentication-failure-url="/login?error"
 			username-parameter="username" password-parameter="password" />
 		<logout logout-url="/perform_logout" delete-cookies="true"

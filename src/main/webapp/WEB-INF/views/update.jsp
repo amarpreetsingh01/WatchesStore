@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" import="java.util.ArrayList" %>
-    pageEncoding="ISO-8859-1"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+ <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
 <title>Insert title here</title>
@@ -10,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body bgcolor="#C0C0C0">
 <%
 	ArrayList<String> categoryList=new ArrayList();
 	categoryList.add("Men Watch");
@@ -20,6 +19,7 @@
 	categoryList.add("Kids Watch");
 	request.setAttribute("categoryList",categoryList);
 %>
+
 <form:form method="POST" action="updateproductdb" commandName="product">
    <table>
    <tr>

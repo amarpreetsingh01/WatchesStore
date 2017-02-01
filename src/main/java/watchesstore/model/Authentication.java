@@ -16,7 +16,6 @@ private String password;
 private String email;
 @NotEmpty(message="contact cannot be left blank")
 private String contact;
-
 private boolean enabled=true;
 
 public boolean isEnabled() {

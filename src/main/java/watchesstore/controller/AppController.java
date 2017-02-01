@@ -13,7 +13,7 @@ public class AppController {
 	}
 	@RequestMapping("/login")
 	public String showLogin(){
-		return "login";
+		return "loginPage";
 	}
 	
 	@RequestMapping("/aboutus")

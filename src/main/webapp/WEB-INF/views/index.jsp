@@ -62,7 +62,6 @@ img {
         
       </a>
     </div>
-  
-<%@include file="footer.jsp" %>
+  <%@include file="footer.jsp" %>
 </body>
 </html>

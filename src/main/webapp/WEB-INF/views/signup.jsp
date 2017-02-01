@@ -9,9 +9,13 @@
   .error { color:red; }    
  </style> 
 </head>
+<body bgcolor="yellow">
+<h1>sign up</h1>
+ <font size = 14 color="#FFFF00"></font>
 <body>
+
 <form:form method="POST" action="register" commandName="authentication">
-   <table>
+ <table>
      <tr>
         <td><form:label path="username">UserName</form:label></td>
         <td><form:input path="username" /></td>

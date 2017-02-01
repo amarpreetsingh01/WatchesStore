@@ -1,5 +1,3 @@
-
-
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <html>
@@ -34,15 +32,18 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="home">Home</a></li>
       <li><a href="contactus">ContactUs</a></li>
-      <li><a href="aboutus">AboutUs</a></li> 
-       <li><a href="addaproduct">Add a product</a></li>
-       <li><a href="showallproducts">show all products</a></li>
-       <li><a href="update">update</a></li>
+      <li><a href="aboutus">AboutUs</a></li>
+      <li><a href="showallproducts">show all products</a></li>
+      <c:if test="${pageContext.request.userPrincipal.name=='amarpreet'}">
+      	<li><a href="addaproduct">Add a product</a></li>
+       
+      </c:if>    
+       
     </ul>
     <ul class="nav navbar-nav navbar-right">
     <c:if
     test="${pageContext.request.userPrincipal.name!=null}">
-    <li> welcome :${pageContext.request.userPrincipal.name}</li>
+   <font color="pink"> <li> welcome :${pageContext.request.userPrincipal.name}</li></font>
     <li> <a href="javascript:formSubmit()">Logout</a></li>
     	<security:authentication var="user" property="principal.authorities" />
 					<security:authorize var="loggedIn" access="isAuthenticated()">
